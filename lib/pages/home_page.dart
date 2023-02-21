@@ -19,9 +19,14 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
+            title: Text(Routes.buttons.name),
+            subtitle: Text(Routes.buttons.path),
+            onTap: () => context.beamToNamed(Routes.buttons.path),
+          ),
+          ListTile(
             title: Text(Routes.typography.name),
             subtitle: Text(Routes.typography.path),
-            onTap: () => Beamer.of(context).beamToNamed(Routes.typography.path),
+            onTap: () => context.beamToNamed(Routes.typography.path),
           ),
         ],
       ),
