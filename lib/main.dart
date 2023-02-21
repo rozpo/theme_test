@@ -6,6 +6,7 @@ import 'package:theme_test/router/router_controller.dart';
 void main() {
   runApp(
     MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       routeInformationParser: BeamerParser(),
       routerDelegate: RouterController.delegate,
     ),
