@@ -17,6 +17,11 @@ class ButtonsPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
+                FilledButton(
+                  onPressed: () {},
+                  child: const Text('Filled Button'),
+                ),
+                const SizedBox(height: 8),
                 ElevatedButton(
                   onPressed: () {},
                   child: const Text('Elevated Button'),
@@ -30,6 +35,12 @@ class ButtonsPage extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   child: const Text('Text Button'),
+                ),
+                const SizedBox(height: 8),
+                FilledButton.icon(
+                  onPressed: () {},
+                  icon: const Icon(Icons.flutter_dash),
+                  label: const Text('Filled Button Icon'),
                 ),
                 const SizedBox(height: 8),
                 ElevatedButton.icon(
