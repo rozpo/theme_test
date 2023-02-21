@@ -24,6 +24,11 @@ class HomePage extends StatelessWidget {
             onTap: () => context.beamToNamed(Routes.buttons.path),
           ),
           ListTile(
+            title: Text(Routes.textfields.name),
+            subtitle: Text(Routes.textfields.path),
+            onTap: () => context.beamToNamed(Routes.textfields.path),
+          ),
+          ListTile(
             title: Text(Routes.typography.name),
             subtitle: Text(Routes.typography.path),
             onTap: () => context.beamToNamed(Routes.typography.path),

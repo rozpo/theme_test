@@ -2,6 +2,7 @@ import 'package:beamer/beamer.dart';
 
 import 'package:theme_test/pages/buttons_page.dart';
 import 'package:theme_test/pages/home_page.dart';
+import 'package:theme_test/pages/textfields_page.dart';
 import 'package:theme_test/pages/typography_page.dart';
 
 mixin RouterController {
@@ -12,6 +13,7 @@ mixin RouterController {
       routes: {
         Routes.home.path: (_, __, ___) => const HomePage(),
         Routes.buttons.path: (_, __, ___) => const ButtonsPage(),
+        Routes.textfields.path: (_, __, ___) => const TextfieldsPage(),
         Routes.typography.path: (_, __, ___) => const TypographyPage(),
       },
     ),
@@ -21,6 +23,7 @@ mixin RouterController {
 enum Routes {
   home('ThemeTest', '/'),
   buttons('Buttons', '/buttons'),
+  textfields('Textfields', '/textfields'),
   typography('Typography', '/typography');
 
   final String name;
